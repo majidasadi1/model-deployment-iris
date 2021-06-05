@@ -1,0 +1,36 @@
+<html>
+<style>
+    body {
+        background-image: url('static/back.jpg');
+        text-align: center}
+    .mf {
+        background-color: #c09ea5;
+        border: 2px solid black;
+        border-radius: 20px; 
+        margin-top:50px; 
+        padding: 20px; 
+        margin-bottom: 30px;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+</style>
+  <body >
+ 
+     <div class="mf">  
+        <br>
+        <br>
+        <h1> IRIS FLOWER DETECTION </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> Sepal Length :  <input type="text", name='a', placeholder="sepal.length"> <br><br>
+            Sepal Width :  <input type="text", name='b', placeholder="	sepal.width"> <br><br>
+            Petal Length :  <input type="text", name='c', placeholder="	petal.length"> <br><br>
+            Petal Width : <input type="text", name='d', placeholder="	petal.width"> <br><br><br></b>
+            <input type="submit" , value='variety prediction!' >
+        </form>
+
+    </div>         
+ 
+
+    </body>
+</html>
